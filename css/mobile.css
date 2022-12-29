@@ -1,0 +1,164 @@
+@media screen and (max-width: 1000px) {
+  .intro {
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* CUSTOM SCROLL */
+  #progressBarContainer,
+  #progressBar {
+    display: none;
+  }
+  /* UTILITY */
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .__grid {
+    grid-template-rows: 2fr 6fr;
+    grid-template-columns: 1fr;
+  }
+
+  /* NAVIGATION */
+
+  .hero {
+    padding-top: 0px;
+  }
+  .hero__text-1 {
+    margin-top: 70px;
+    line-height: 0.5;
+  }
+  .hero__text-2 {
+    margin-top: 50px;
+    font-size: 40px;
+    line-height: 1;
+  }
+  .hero__text-3 {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  /* INTRO */
+
+  .intro {
+    height: auto;
+  }
+  .intro_title {
+    margin-top: 80px;
+    display: sticky;
+    top: 0px;
+    left: 0px;
+  }
+  .intro_content {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  /* SKILLS */
+  .skills {
+    height: auto;
+  }
+  .skills .skills_title {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .skills .skills_content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .other_text {
+    font-size: 48px;
+  }
+
+  .skills .__grid {
+    grid-template-rows: 3fr 4fr;
+  }
+  .skills .__grid div:nth-child(even) {
+    grid-row: 1;
+  }
+  /* PROJECTS */
+  .projects {
+    height: auto;
+  }
+  /* ABOUT */
+  .about {
+    height: 80vh;
+    padding: 80px 0;
+  }
+  .about .__grid {
+    grid-template-rows: 2fr 5fr;
+  }
+  /* FOOTER */
+  .footer .flex {
+    justify-content: space-evenly;
+  }
+  .footer {
+    padding: 40px;
+    height: auto;
+  }
+  .footer_content {
+    justify-self: center;
+  }
+  .footer .grid {
+    gap: 20px;
+  }
+  .footer nav .flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* NAVIGATION */
+  .navbar .logo a {
+    pointer-events: none;
+  }
+  /* HERO */
+  .hero__text-1 {
+    font-size: 120px;
+    line-height: 0.6;
+  }
+  /* SKILLS */
+  .skills {
+    padding-top: 100px;
+  }
+  .skills .__grid {
+    grid-template-rows: 1fr 3fr;
+  }
+  .skills_title {
+    font-size: 30px;
+  }
+  .language .other_text {
+    padding-top: 10px;
+    font-size: 30px;
+  }
+  /* PROJECTS */
+  .projects {
+    padding-top: 100px;
+  }
+  .projects_title {
+    font-size: 30px;
+  }
+  /* ABOUT */
+  .about {
+    padding-top: 100px;
+    height: auto;
+  }
+  .about .__grid {
+    grid-template-rows: 1fr 4fr;
+  }
+  .about_title {
+    font-size: 30px;
+  }
+  /* INTRO */
+  .intro_title {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+}

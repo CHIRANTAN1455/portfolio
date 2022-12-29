@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ============ COLORS ============== */
+  --bg-color: #162447;
+  --bg-color-2: #192850;
+
+  --text-color: #a6ccfc;
+  --un-text-color: #92b3db;
+  --text-color-opac: #0000009a;
+
+  --secondary-color: #e43f5a;
+  --secondary-color-opac: #ffd700d5;
+  --extra-color: #ffd90069;
+
+  --fontcolor-1: lightseagreen;
+  --fontcolor-2: lightcoral;
+  --fontcolor-3: lightgreen;
+
+  /* ============= TOPOGRAPH ============*/
+  --logo-font: "Sacramento", cursive;
+  --header-font: "Times New Roman", Times, serif;
+  --body-font: "Montserrat", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+  padding: 0 40px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-v {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--text-color-2);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.theme1 {
+  background: var(--bg-color-2);
+  color: var(--text-color);
+}
+
+.theme2 {
+  color: var(--text-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
